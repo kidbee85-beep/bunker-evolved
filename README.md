@@ -31,10 +31,12 @@ From this archive's root:
 mkdir -p dist
 python3 firmware/tools/gen_bunker_library.py
 cd firmware
-JIELI_TOOLCHAIN=/absolute/path/to/toolchain AC79_SDK=/absolute/path/to/sdk FELUCCA_CPU2=0 ./build.sh
+JIELI_TOOLCHAIN=/absolute/path/to/toolchain AC79_SDK=/absolute/path/to/sdk FELUCCA_CPU2=0 sh ./build.sh
 ```
 
 The output is `firmware/build/felucca.fwsc`. Its internal package identity is Bunker's. **Do not pass `--release`**: that upstream switch overrides the product identity with Felucca's release numbering. One CPU core is the Bunker default. The two-core experiment is not part of this RC2. Keep the original `build.sh` and packaging checks; do not flash `felucca.bin` directly.
+
+The browser-based source upload stores files without executable flags. Use `sh` for shell scripts (for example `sh tools/get_toolchain.sh`) and `python3` for Python scripts, or restore executable permissions with `chmod +x` before following upstream examples that run them directly. The original release source ZIP retains its original file permissions.
 
 ## Build and test the simulator
 

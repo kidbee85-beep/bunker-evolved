@@ -13,6 +13,9 @@ root. All 505 original files are included. README.md was updated with project
 links and the new source availability; this publication note was added.
 Firmware implementation, engine sources, assets and tests are unchanged.
 The engines are vendored ordinary files, not Git submodule links.
+The browser upload stores scripts without executable flags; README.md
+documents invoking them with sh/python3 or restoring those flags. Their
+contents remain unchanged. The original release ZIP retains its file modes.
 
 The corresponding released firmware is:
 https://github.com/kidbee85-beep/bunker-evolved/releases/download/v1.0.0/bunker-evolved-rc2.fwsc
