@@ -114,3 +114,5 @@ On 18 October 2026 the complete corresponding source from the published `Bunker-
 [Editor](https://bunker-evolved.sugarypixie10.chatgpt.site/editor/) · [Comparison with Felucca and other firmware](https://bunker-evolved.sugarypixie10.chatgpt.site/comparison.html)
 
 Editor 0.1 is in `dist/editor/`, with independent music/protocol/device modules and an interchangeable MIDI adapter. See `docs/release/editor-architecture.md` and `feature-provenance.md`. The editor has actual C-handler host tests and DOM interaction tests; physical USB acceptance remains pending. Native apps and plug-ins are future work. The firmware binary remains unchanged.
+
+You can also try Bunker Evolved in the browser, no flashing needed, in the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
